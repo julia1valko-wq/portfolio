@@ -1,4 +1,4 @@
-<!doctype html>
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e88b5e5c-ef93-4f54-b70a-1d3b80b593a8" /><!doctype html>
 <html lang="uk">
 <head>
   <meta charset="utf-8" />
@@ -7,6 +7,8 @@
 
   <!-- Шрифти -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  
 
   <!-- Підключення CSS -->
   <link rel="stylesheet" href="css/style.css">
@@ -17,7 +19,7 @@
   <header class="site-header">
     <div class="wrap">
       <div class="brand">
-        <h1>Валько Юлія</h1>
+        <h1>Валько Юлія СТАРТ</h1>
         <p class="sub">4 курс — Графічний дизайн</p>
       </div>
       <nav class="nav">
