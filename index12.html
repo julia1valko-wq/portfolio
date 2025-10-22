@@ -3,21 +3,193 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Валько Юлія — Портфоліо ТЕСТ</title>
+  <title>Юлія Валько — Портфоліо</title>
 
-  <!-- Шрифти -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
-  <!-- Підключення CSS -->
-  <link rel="stylesheet" href="css/style.css">
-
-  <meta name="description" content="Портфоліо Валько Юлії — 4 курс, Графічний дизайн. Зразки робіт: плакати, макети, mockup." />
+  <style>
+    :root {
+      --bg: #fdfaf6;
+      --accent: #2b2b2b;
+      --muted: #6b6b6b;
+      --primary: #a12b2b;
+      --secondary: #ff7f50;
+      --highlight: #f4c242;
+      --wrap: 1100px;
+      --radius: 10px;
+      --gap: 20px;
+      font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--accent);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .wrap {
+      max-width: var(--wrap);
+      margin: 0 auto;
+      padding: 28px;
+    }
+    .site-header {
+      background: #fff;
+      border-bottom: 2px solid var(--highlight);
+    }
+    .site-header .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .brand h1 {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      font-size: 26px;
+      letter-spacing: 0.3px;
+      color: var(--primary);
+    }
+    .brand .sub {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .nav a {
+      margin-left: 16px;
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+    .nav a:hover {
+      color: var(--primary);
+    }
+    .hero {
+      background: linear-gradient(180deg, #fff 0%, #fef4e6 100%);
+      padding: 36px 0;
+    }
+    .hero-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .hero-text h2 {
+      margin: 0 0 8px 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .hero-text p {
+      margin: 0 0 8px 0;
+      color: var(--muted);
+    }
+    .tagline {
+      margin-top: 6px;
+      color: var(--secondary);
+      font-weight: 700;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 700;
+      transition: background 0.3s ease, transform 0.2s;
+    }
+    .btn:hover {
+      background: var(--secondary);
+      transform: scale(1.05);
+    }
+    .section {
+      padding: 36px 0;
+    }
+    .section-title {
+      margin: 0 0 18px 0;
+      font-size: 22px;
+      color: var(--primary);
+      font-weight: 700;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: #fff;
+      padding: 12px;
+      border-radius: var(--radius);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+    }
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .card figcaption {
+      padding-top: 10px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .alt {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 18px;
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      color: var(--muted);
+    }
+    .about-grid p {
+      margin: 6px 0;
+    }
+    .site-footer {
+      padding: 18px 0;
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 2px solid var(--highlight);
+      background: #fff8f0;
+      text-align: center;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    @media (max-width: 720px) {
+      .hero-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+      .card img {
+        height: 180px;
+      }
+      .nav {
+        display: none;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
       <div class="brand">
-        <h1>Валько Юлія ТЕСТ</h1>
+        <h1>Юлія Валько</h1>
         <p class="sub">4 курс — Графічний дизайн</p>
       </div>
       <nav class="nav">
@@ -33,7 +205,7 @@
       <div class="wrap hero-inner">
         <div class="hero-text">
           <h2>Портфоліо студентки графічного дизайну</h2>
-          <p>Коротко: добірка плакатів і mockup-робіт. Робота виконана у плакатній стилістиці — контрасти, символізм, експерименти з типографією.</p>
+          <p>Коротко: добірка плакатів, ілюстрацій, mockup-робіт. Стиль: контрасти, символізм, експерименти з типографією.</p>
           <p class="tagline">Слоган: <strong>Світло проти темряви</strong></p>
         </div>
         <div class="hero-cta">
@@ -46,28 +218,27 @@
       <h3 class="section-title">Портфоліо</h3>
       <div class="grid">
         <figure class="card">
-          <img src="images/poster1.jpg" alt="Плакат — Світло проти темряви 1">
+          <img src="images/poster1.jpg" alt="Плакат 1">
           <figcaption>
             <strong>Плакат 1</strong>
-            <p>Серія «Світло проти темряви» — плакатна композиція, робота з перспективою та типографікою.</p>
+            <p>Опис: серія «Світло проти темряви», робота з перспективою і контрастом.</p>
           </figcaption>
         </figure>
-
         <figure class="card">
-          <img src="images/poster2.jpg" alt="Плакат — Світло сильніше за темряву">
+          <img src="images/poster2.jpg" alt="Плакат 2">
           <figcaption>
             <strong>Плакат 2</strong>
-            <p>Ілюстративний плакат із контрастною фігурою й символічним вогнем.</p>
+            <p>Ілюстративний плакат із символікою й композиційними акцентами.</p>
           </figcaption>
         </figure>
-
         <figure class="card">
-          <img src="images/mockup_tshirt.jpg" alt="Макет футболки — емблема">
+          <img src="images/mockup_tshirt.jpg" alt="Mockup / Брендинг">
           <figcaption>
             <strong>Mockup / Брендинг</strong>
-            <p>Макет нанесення логотипу на футболку.</p>
+            <p>Макет нанесення логотипу на футболку / брендинг-елемент.</p>
           </figcaption>
         </figure>
+        <!-- Додай ще роботи сюди -->
       </div>
     </section>
 
@@ -75,28 +246,28 @@
       <h3 class="section-title">Про мене</h3>
       <div class="about-grid">
         <div>
-          <p><strong>Ім'я:</strong> Валько Юлія</p>
+          <p><strong>Ім'я:</strong> Юлія Валько</p>
           <p><strong>Курс / Спеціальність:</strong> 4 курс — Графічний дизайн</p>
-          <p><strong>Фокус:</strong> плакат, ілюстрація, макети для мерчу</p>
+          <p><strong>Напрями:</strong> плакати, ілюстрація, мерч, типографіка</p>
         </div>
         <div>
-          <p><strong>Портфоліо:</strong> тут — вибірка моїх робіт;.</p>
+          <p><strong>Мета:</strong> створювати візуальні образи, що надихають та спонукають до роздумів.</p>
+          <p><strong>Навички:</strong> Adobe Illustrator, Photoshop, InDesign, композиція, кольоротипографіка</p>
         </div>
       </div>
     </section>
 
     <section id="contact" class="wrap section">
       <h3 class="section-title">Контакт</h3>
-      <p>Пошта <a href="mailto:valko1julia@gmail.com">valko1julia@gmail.com</a></p>
+      <p>Електронна пошта: <a href="mailto:valko1julia@gmail.com">valko1julia@gmail.com</a></p>
+      <!-- Можеш додати посилання на соцмережі чи форму зв’язку -->
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
-      <p> Валько Юлія — 4 курс, Графічний дизайн • Портфоліо (демонстраційна сторінка)</p>
+      <p>© Юлія Валько — Портфоліо / демо‑версія</p>
     </div>
   </footer>
 </body>
-
 </html>
-
