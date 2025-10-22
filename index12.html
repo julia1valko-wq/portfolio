@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Валько Юлія — Портфоліо</title>
+
+  <!-- Шрифти -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Підключення CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="description" content="Портфоліо Валько Юлії — 4 курс, Графічний дизайн. Зразки робіт: плакати, макети, mockup." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand">
+        <h1>Валько Юлія</h1>
+        <p class="sub">4 курс — Графічний дизайн</p>
+      </div>
+      <nav class="nav">
+        <a href="#portfolio">Портфоліо</a>
+        <a href="#about">Про мене</a>
+        <a href="#contact">Контакт</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          <h2>Портфоліо студентки графічного дизайну</h2>
+          <p>Коротко: добірка плакатів і mockup-робіт. Робота виконана у плакатній стилістиці — контрасти, символізм, експерименти з типографією.</p>
+          <p class="tagline">Слоган: <strong>Світло проти темряви</strong></p>
+        </div>
+        <div class="hero-cta">
+          <a class="btn" href="#portfolio">Переглянути роботи</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="wrap section">
+      <h3 class="section-title">Портфоліо</h3>
+      <div class="grid">
+        <figure class="card">
+          <img src="images/poster1.jpg" alt="Плакат — Світло проти темряви 1">
+          <figcaption>
+            <strong>Плакат 1</strong>
+            <p>Серія «Світло проти темряви» — плакатна композиція, робота з перспективою та типографікою.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="images/poster2.jpg" alt="Плакат — Світло сильніше за темряву">
+          <figcaption>
+            <strong>Плакат 2</strong>
+            <p>Ілюстративний плакат із контрастною фігурою й символічним вогнем.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="images/mockup_tshirt.jpg" alt="Макет футболки — емблема">
+          <figcaption>
+            <strong>Mockup / Брендинг</strong>
+            <p>Макет нанесення логотипу на футболку.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="about" class="wrap section alt">
+      <h3 class="section-title">Про мене</h3>
+      <div class="about-grid">
+        <div>
+          <p><strong>Ім'я:</strong> Валько Юлія</p>
+          <p><strong>Курс / Спеціальність:</strong> 4 курс — Графічний дизайн</p>
+          <p><strong>Фокус:</strong> плакат, ілюстрація, макети для мерчу</p>
+        </div>
+        <div>
+          <p><strong>Портфоліо:</strong> тут — вибірка моїх робіт;.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="wrap section">
+      <h3 class="section-title">Контакт</h3>
+      <p>Пошта <a href="mailto:valko1julia@gmail.com">valko1julia@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p> Валько Юлія — 4 курс, Графічний дизайн • Портфоліо (демонстраційна сторінка)</p>
+    </div>
+  </footer>
+</body>
+</html>
